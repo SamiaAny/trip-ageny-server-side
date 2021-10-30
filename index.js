@@ -90,6 +90,7 @@ async function run() {
             res.json(result);
         });
 
+        //PUT API FOR PENDING STATUS
         app.put('/allBookings/:id', async (req,res)=>{
             console.log(req.params.id);
             const id = req.params.id;
@@ -112,13 +113,13 @@ async function run() {
         });
 
         //PUT API FOR PENDING STATUS
-        app.put('allBookings/:id', async (req,res)=>{
-            const id = req.params.id;
-            // const bookDetails = req.body;
-            console.log('user pdate',id);
-            // console.log(bookDetails);
-            res.send('hit');
-        })
+        // app.put('allBookings/:id', async (req,res)=>{
+        //     const id = req.params.id;
+        //     // const bookDetails = req.body;
+        //     console.log('user pdate',id);
+        //     // console.log(bookDetails);
+        //     res.send('hit');
+        // })
     }
     finally {
         // await client.close();
